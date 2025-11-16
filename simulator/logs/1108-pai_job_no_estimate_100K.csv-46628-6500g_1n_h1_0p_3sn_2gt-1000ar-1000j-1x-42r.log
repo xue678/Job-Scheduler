@@ -1,0 +1,8 @@
+==========
+1000_Jobs_repeated_1_times
+alloc,preempt,avg_jct,wait_time,makespan,jobs_done,runtime
+(FIFO, LGF),6659.36,99.94,524162,4638,23.31
+
+# Sort by JCT
+alloc,preempt,avg_jct,wait_time,makespan,jobs_done,runtime
+(FIFO, LGF),6659.36,99.94,524162,4638,23.31
