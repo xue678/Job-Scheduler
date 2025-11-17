@@ -9,6 +9,7 @@ ALLOC_POLICY_DICT = {
     2: 'SJG',  # SJF with estimator using GROUP, USER feature
     4: 'SJGG',  # SJF with estimator using GROUP, USER, GPU feature
     8: 'FIFO',  # FIFO, the default
+    16: 'RL',  # rl
 }
 
 PREEMPT_POLICY_DICT = {

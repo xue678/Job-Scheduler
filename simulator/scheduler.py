@@ -61,6 +61,8 @@ class Scheduler:
             job_list.sort(key=lambda e: (e['duration'], e['job_id']))
         elif self.alloc_policy == 8:  # FIFO, remains the original order
             job_list.sort(key=lambda e: (e['submit_time'], e['job_id']))
+        elif self.alloc_policy == 16:  # RL, NEED TO BE MODIFY, BUT USE FIFO NOW, remains the original order
+            job_list.sort(key=lambda e: (e['submit_time'], e['job_id']))
         elif self.alloc_policy in [1, 2, 4]:  # SJF with duration estimation
             est_feature = {1: 'user_dur', 2: 'group_dur', 4: 'group_gpu_dur'}[self.alloc_policy]
             job_list.sort(key=lambda e: (e[est_feature], e['job_id']))
